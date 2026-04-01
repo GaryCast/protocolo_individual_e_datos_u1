@@ -14,7 +14,7 @@
    * Declarar un arreglo de 10 enteros en cada lenguaje dado
    * Inicializarlo con valores aleatorios.
 
-2. Recorrido e mostrar
+2. Recorrido y mostrar
    * Recorrerlo usando bucle for clásico.
    * Recorrerlo usando un for-each o equivalente.
 
