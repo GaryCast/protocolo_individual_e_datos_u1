@@ -46,3 +46,89 @@ int[][] irregular = {
 {6}
 };
 ```
+## ACTIVIDADES
+1. Declaración e inicialización (1 al 9)
+```java
+int[][] matriz = new int[3][3];
+
+int valor = 1;
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        matriz[i][j] = valor;
+        valor++;
+    }
+}System.out.println("Matriz después de inicializar:");
+imprimirMatriz(matriz);
+```
+2. Recorrido
+* Imprimir en forma de Tabla
+```java
+System.out.println("Matriz:");
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        System.out.print(matriz[i][j] + "\t");
+    }
+    System.out.println();
+}
+```
+Se usa \t para que quede alineado como tabla.
+
+* Recorrer por columnas
+```java
+System.out.println("\nRecorrido por columnas:");
+for (int j = 0; j < 3; j++) {
+    for (int i = 0; i < 3; i++) {
+        System.out.print(matriz[i][j] + " ");
+    }
+    System.out.println();
+}
+```
+Aquí cambias el orden: primero columnas (j), luego filas (i).
+4. Operaciones
+* Sumar todos los elementos
+```java
+int suma = 0;
+
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        suma += matriz[i][j];
+    }
+}
+
+System.out.println("\nSuma total: " + suma);
+```
+Resultado esperado: 45
+
+Tambien podemos hacerlo de esta forma:
+```java
+    public static int sumarMatriz(int[][] matriz) {
+        int suma = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                suma += matriz[i][j];
+            }
+        }
+        return suma;
+    }
+```
+y llamamos la funcion:
+```java
+int suma = sumarMatriz(matriz);
+System.out.println("\nSuma total: " + suma);
+```
+* Intercambiar primera fila con la ultima
+```java
+int[] temp = matriz[0];
+matriz[0] = matriz[2];
+matriz[2] = temp;
+```
+Lo anterior intercambia directamente las filas completas y esto las muestra despues del cambio.
+```java
+System.out.println("\nMatriz después de intercambiar filas:");
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        System.out.print(matriz[i][j] + "\t");
+    }
+    System.out.println();
+}
+```
