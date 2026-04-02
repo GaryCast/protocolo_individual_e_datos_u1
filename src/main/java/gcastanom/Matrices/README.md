@@ -10,9 +10,9 @@ Se usa cuando queremos organizar datos en forma de tabla (filas y columnas), com
 Una matriz se ve así:
 ```java
 int[][] matriz = {
-{1, 2, 3},
-{4, 5, 6},
-{7, 8, 9}
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
 };
 ```
 Para acceder a un elemento:

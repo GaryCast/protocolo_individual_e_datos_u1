@@ -19,9 +19,7 @@ int[] numeros = {1, 2, 3};
 ```
 ### Diferencia entre tamaño fijo y dinámico
 
-* En Java, los arreglos son de tamaño fijo, una vez definidos, no pueden crecer ni reducirse
-
-A diferencia de Python o TypeScript, donde se puede agregar elementos fácilmente, en Java se debe definir el tamaño desde el inicio.
+En Java, los arreglos son de tamaño fijo, una vez definidos, no pueden crecer ni reducirse. A diferencia de Python o TypeScript, donde se puede agregar elementos fácilmente, en Java se debe definir el tamaño desde el inicio.
 
 ### Indexación y posiciones
 
